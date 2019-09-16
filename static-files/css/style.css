@@ -51,6 +51,7 @@ a:hover{
 h1,h2,h3,h4,li{
     font-family: 'Manjari','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgba(0, 0, 0, 0.65);
+    font-weight:900;
 }
 p{
     font-family: 'Tinos', 'Times New Roman', Times, serif;
@@ -94,7 +95,7 @@ header.site-header{
 }
 .sub-introduction h1{
     margin-top:  50px;
-    font-size: 3.0em;
+    font-size: 4.0em;
     font-weight: 900;
 }
 .sub-introduction h1 span{
@@ -192,17 +193,117 @@ header.site-header{
 .card-body .card-info{
     background-color: #fff;
 }
+.ticky-usage{
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.ticky-usage h2{
+    font-size: 2.7em;
+    font-weight: 300;
+    letter-spacing: 0em;
+}
+.ticky-usage h2 span{
+    font-weight: 900;
+}
+.ticky-usage p{
+    text-align: center;
+    font-size: 1.4em;
+    margin-top: 30px;
+}
+.ticky-usage button{
+    padding: 20px 40px;;
+    font-size: 1.9em;
+    color:#fff;
+    margin-top: 28px;
+    border:none;
+    border-radius: 5px;
+    background-color: #40596b;
+}
+footer{
+    background-color: #40596b;
+    text-align: center;
+    padding: 25px 0px;
+}
+footer p{
+    color:rgba(255, 255, 255, 0.8);
+    margin-top: 9px;
+}
 
 /*    MEDIA QUERY */
-@media (min-width: 300px) and (max-width: 600px){
-    .ticky-introduction{
+@media (min-width: 720px) and (max-width: 900px){
+    .ticky-image img{
+        width: 330px;
+        height: 330px;
+    }
+    .card-container .body-3{
         flex-flow: column wrap;
     }
 }
-
-@media (min-width: 0px) and (max-width: 300px){
-.ticky-introduction{
-    flex-flow: column wrap;
+@media (min-width: 400px) and (max-width: 720px){
+    .ticky-introduction{
+        flex-flow: column wrap;
+    }
+    .sub-introduction h1{
+        margin-top: 10px;
+    }
+    .sub-introduction p{
+        text-align: center;
+        padding: 0px 110px;
+        font-size: 1.7em;
+    }
+    .sub-introduction button{
+        padding: 20px 50px;
+    }
+    .ticky-image{
+        text-align: center;
+        margin-top: 20px;
+        padding-left: 0px;
+    }
+    .ticky-image img{
+        width: 300px;
+        height: 300px;
+    }
+    .ticky-information h2{
+        font-size: 2.4em;
+    }
+    .ticky-container{
+        flex-flow: column wrap;
+    }
+    .card-container{
+        flex-flow: column wrap;
+    }
+    .ticky-card{
+        padding:0px;
+    }
+    .ticky-card h2{
+        padding-top: 20px;
+    }
+    .card-container .card-body{
+        width: 100%;
+        margin-bottom: 45px;
+        padding: 0px;
+        margin: 0px;
+        margin-bottom:50px;
+    }
+    .ticky-usage h2{
+        font-size: 1.9em;
+    }
+    .ticky-usage .ruler{
+        width: 30%;
+    }
+    .ticky-usage p{
+        font-size: 1.3em;
+        padding: 2px 30px;
+    }
+    .ticky-usage button{
+        font-size: 1.3em;
+    }
 }
+
+@media (min-width: 0px) and (max-width: 400px){
+    .ticky-introduction{
+        flex-flow: column wrap;
+    }
 }
 
