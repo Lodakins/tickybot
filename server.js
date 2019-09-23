@@ -10,6 +10,9 @@ app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname+'/index.html'));
 });
 
+app.get('/index.html',(req,res)=>{
+    res.sendFile(path.join(__dirname+'/index.html'));
+});
 app.listen(process.env.PORT || PORT, function(){
     console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
   });

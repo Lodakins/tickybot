@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
     <title> TickyBot </title>
     <meta charset="utf-8">
@@ -10,9 +10,9 @@
 
 </head>
 <body>
-    <header class="site-header">
-        <nav class="site-navigation">
-            <ul class="link-container">
+    <header class="site-header" id="top">
+        <nav class="site-header__site-navigation">
+            <ul class="site-header__link-container">
                 <li><a href="index.html"> Home </a> </li>
                 <li><a href="#"> About </a> </li>
                 <li><a href="#"> Features</a> </li>
@@ -24,14 +24,14 @@
 <main>
 
     <section class="ticky-introduction">
-            <div class="sub-introduction"> 
+            <div class="ticky-introduction__sub-introduction"> 
                 <h1> <strong>Ticky</strong><span>Bot</span></h1>
                 <p>
                     Let your team manage their support tickets<br/> 100% inside Slack
                 </p>
-                <button class="ticky-button"> Add to <span>Slack </span> </button>
+                <button class="ticky-introduction__ticky-button"> Add to <span>Slack </span> </button>
             </div>
-            <div class="ticky-image">
+            <div class="ticky-introduction__ticky-image">
                <img src="images/hero.svg">
             </div>
     </section>
@@ -41,7 +41,7 @@
         </h2>
         <hr class="ruler">
            
-        <div class="ticky-container">
+        <div class="ticky-information__ticky-container">
             <article class="info">
                 <p>TickyBot is a Slack Bot that lets you use support tickets on Slack. This way, you don't need to leave your beloved channel to
                     assist your users, if you don't feel like it.
@@ -56,10 +56,10 @@
             </article>
         </div>
            
-        <article class="extra-info">
+        <article class="ticky-information__extra-info">
            <p style="font-style: normal"> Support requests shouldn't be handled through Slack's direct messages.</p>
             <p>Image about someone asking silly questions and the workplace admin asking him/her to open a support ticket so other admins could look into the issue.</p>
-            </article>
+        </article>
     </section>
 
     <section class="ticky-card">
@@ -126,6 +126,10 @@
         <p> Source Code is available at Github Page</p>
         <p> The app is not affilated to slack or any other organisation</p>
     </footer>
+
+    <div class="go-up">
+        <a href="#top"><span> Up</span></a>
+    </div>
 
 </main>
 
